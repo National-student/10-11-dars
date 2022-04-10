@@ -9,43 +9,43 @@
     <title>Template</title>
 </head>
 <body>
-   
+    
     <div class="container">
         <h2 class="h2 text-center">Users API</h2>
-
+        
         <div class="row">
-
+            
             <!-- Users section -->
             <div class="col-4 border-end border-primary">
                 <h4>Users</h4>
                 <p>Count of users: <span class="count_users">0</span></p>
-
+                
                 <ul class="list-unstyled users_list"></li>
                 </ul>
             </div>
-
+            
             <!-- Posts section -------------------------------------------------------------->
             
             <div class="col-4 border-end border-primary">
                 <h4>Posts</h4>
                 <p>Count of posts: <span class="count_posts">0</span></p>
-
+                
                 <ul class="list-unstyled posts_list"></ul>
             </div>
-
+            
             <!-- Comment section ------------------------------------------------------------->
             
             <div class="col-4">
                 <h4>Comments</h4>
                 <p>Count of comments: <span class="count_comments">0</span></p>
-
+                
                 <ul class="list-unstyled comments_list">
                     
                 </ul>
             </div>
         </div>
     </div>
-
+    
     <template id="userTemplate">
         <li class="border border-danger rounded p-2 mb-2 users_item">
             <h5 class="users_title mb-0 text-decoration-underline text-primary">Lorem, ipsum.</h5>
@@ -53,23 +53,23 @@
             <p class="mb-0">Country: <span class="users_country">Tashkent</span></p>
             <p class="mb-0">Company: <span class="users_company">Apple group</span></p>
             <p class="mb-0">Website: <span class="users_link">salom.org</span></p>
-    </template>
-
-    <template id="postTemplate">
-        <li class="border border-danger rounded p-2 mb-2 post_item">
-            <h5 class="posts_title mb-0 text-decoration-underline text-primary">Lorem, ipsum.</h5>
-            <p class="mb-0">Post: <span class="post_text">salom@gmail.com</span></p>
-        </li>
-    </template>
-
-    <template id="commentTemplate">
-        <li class="border border-danger rounded p-2 mb-2 comment_item">
-            <h5 class="mb-0">Title:<span class="comments_title">Lorem ipsum dolor sit.</span></h5>
-            <p class="mb-0">Comment: <span class="comments_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, necessitatibus.</span></p>
-        </li>
-    </template>
-
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+        </template>
+        
+        <template id="postTemplate">
+            <li class="border border-danger rounded p-2 mb-2 post_item">
+                <h5 class="posts_title mb-0 text-decoration-underline text-primary">Lorem, ipsum.</h5>
+                <p class="mb-0">Post: <span class="post_text">salom@gmail.com</span></p>
+            </li>
+        </template>
+        
+        <template id="commentTemplate">
+            <li class="border border-danger rounded p-2 mb-2 comment_item">
+                <h5 class="mb-0">Title:<span class="comments_title">Lorem ipsum dolor sit.</span></h5>
+                <p class="mb-0">Comment: <span class="comments_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, necessitatibus.</span></p>
+            </li>
+        </template>
+        
+        <script src="js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

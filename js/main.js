@@ -33,7 +33,7 @@ console.log(storageCommentId);
 
 if (storagePostId) {
     ;(async function() {
-            
+        
         let responce = await fetch(`https://jsonplaceholder.typicode.com/user/${storagePostId}/posts`);
         let data = await responce.json();
         renderPosts(data, elPostList)
@@ -43,10 +43,10 @@ if (storagePostId) {
 if (storageCommentId) {
     ;(async function() {
         
-       
-            let responce = await fetch(`https://jsonplaceholder.typicode.com/posts/${storageCommentId}/comments`);
-            let data = await responce.json();
-            renderComments(data, elCommentList)
+        
+        let responce = await fetch(`https://jsonplaceholder.typicode.com/posts/${storageCommentId}/comments`);
+        let data = await responce.json();
+        renderComments(data, elCommentList)
     })();
 }
 
@@ -79,7 +79,7 @@ function renderPosts(array, wrapper) {
     wrapper.innerHTML = null;
     elCommentList.innerHTML = null;
     elCountComment.innerHTML = "0";  
-
+    
     
     let postFragment = document.createDocumentFragment();
     
@@ -151,7 +151,7 @@ elPostList.addEventListener('click', evt => {
             let data = await responce.json();
             renderComments(data, elCommentList)
             storage.setItem('arrayCommentNode', JSON.stringify(foundCommentId))
-
+            
         }
     })();
 })
